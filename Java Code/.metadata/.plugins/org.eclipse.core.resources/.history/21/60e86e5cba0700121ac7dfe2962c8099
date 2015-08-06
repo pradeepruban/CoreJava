@@ -1,0 +1,19 @@
+
+public class finals {
+
+public final void add()
+{
+	System.out.println("Add method is clicked");
+}
+	
+public void adds()
+{
+	
+}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

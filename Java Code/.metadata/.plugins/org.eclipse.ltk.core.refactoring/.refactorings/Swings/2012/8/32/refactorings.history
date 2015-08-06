@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Swings/src/TimeZone.java&apos; to &apos;TimeZones.java&apos;" description="Rename resource &apos;TimeZone.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/TimeZone.java" name="TimeZones.java" stamp="1344510461432" updateReferences="true"/>
+</session>

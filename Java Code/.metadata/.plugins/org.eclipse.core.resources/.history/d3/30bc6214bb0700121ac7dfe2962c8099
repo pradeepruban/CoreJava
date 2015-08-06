@@ -1,0 +1,19 @@
+
+public class finalvariable {
+
+private final int a =50;
+
+private final String name ="pradeep";
+	
+public void disp()
+{
+	String name="ruban";
+	System.out.println("Name"+name);
+}
+	public static void main(String[] args) {
+	
+		finalvariable f= new finalvariable();
+		f.disp();
+	}
+
+}

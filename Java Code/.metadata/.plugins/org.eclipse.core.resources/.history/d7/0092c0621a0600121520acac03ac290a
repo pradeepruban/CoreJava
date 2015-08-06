@@ -1,0 +1,49 @@
+import java.sql.Connection; 
+import java.sql.DriverManager; 
+import java.sql.SQLException; 
+import java.sql.Statement; 
+import java.sql.*;
+
+
+public class DBConnection 
+	{ 
+	public static void main(String[] args) throws Exception 
+		{ 
+        	Connection connection = null; 
+        		try 
+        			{ 
+        			//Class.forName("com.mysql.jdbc.Driver"); 
+        			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+        			String url="jdbc:odbc:test";
+        			ResultSet rs=null;
+        			connection =DriverManager.getConnection(url);
+        			//connection = DriverManager.getConnection("jdbc:mysql://localhost/testdb", "root", ""); 
+        			connection.setAutoCommit(false); 
+        			Statement statement = connection.createStatement(); 
+        			System.out.println("Connected to the MS-Access");
+        			rs = statement.executeQuery("select * from Employee");
+        			while (rs.next()){
+        			String id = rs.getString(2);
+        			System.out.println("ID Number :"+id);
+        			String name = rs.getString(3);
+        			System.out.println("Employee Name :"+name);
+        			}
+ /*       			statement.addBatch("INSERT INTO products (product_code, product_name, quantity, price) VALUE ('P0000006', 'Championship Manager', 10.99, 20)");    
+        			statement.addBatch("INSERT INTO products (product_code, product_name, quantity, price) VALUE ('P0000007', 'Transport Tycoon Deluxe', 15.99, 19)"); 
+        			statement.addBatch("INSERT INTO products (product_code, product_name, quantity, price) VALUE ('P0000008', 'Rollercoaster Tycoon 3', 5.99, 25)"); 
+        			statement.addBatch("INSERT INTO products (product_code, product_name, quantity, price) VALUE ('P0000009', 'Pro Evolution Soccer', 8.99, 50)"); 
+        			int[] updateCounts = statement.executeBatch(); 
+        			connection.commit();*/ 
+        			connection.close();
+        			}
+        		catch (SQLException e) 
+        		{ 
+       				if (connection != null) 
+       				{ 
+       				 
+       				e.printStackTrace(); 
+        			}
+        			
+				} 
+		}
+		}

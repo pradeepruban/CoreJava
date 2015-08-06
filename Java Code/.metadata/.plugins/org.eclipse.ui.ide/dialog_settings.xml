@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="435"/>
+		<item key="DIALOG_HEIGHT" value="361"/>
+		<item key="DIALOG_Y_ORIGIN" value="257"/>
+		<item key="DIALOG_WIDTH" value="411"/>
+		<item key="TOGGLE_SELECTED" value="true"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.wizards.new.project"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.team.cvs.ui.newWizards"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1332566749437"/>
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

@@ -1,0 +1,23 @@
+import java.io.*;
+
+public class Files{
+
+  public static void main(String[] args) throws IOException{
+  BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+  System.out.print("Please enter the file name to create : ");
+  String file_name = "Salamon";//in.readLine();
+  File file = new File("d:\\pradeep\\"+file_name+".txt");
+  boolean exist = file.createNewFile();
+  if (exist)
+  {
+  System.out.println("File already exists.");
+  System.exit(0);
+  }
+  else
+  {
+  FileWriter fstream = new FileWriter(file_name);
+  //BufferedWriter out = new BufferedWriter(file_name);
+  System.out.println("File created successfully.");
+  }
+  }
+} 

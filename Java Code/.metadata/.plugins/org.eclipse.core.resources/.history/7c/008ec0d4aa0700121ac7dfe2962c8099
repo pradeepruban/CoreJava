@@ -1,0 +1,20 @@
+
+import java.util.Vector;
+
+public class Vectors {
+   public static void main(String[] args) {
+  
+	   //Vector<Integer> vec = new Vector<Integer>(4);
+	   Vector<String> vec = new Vector<String>(4);
+      vec.add("Pradeep");
+      vec.add("Ruban");
+      vec.add("Syntel");
+      vec.add("Chennai");
+      System.out.println("Added numbers in vec vector are :- "); 
+      for (String pradeep : vec) {
+         System.out.println("Name = " + pradeep);
+      }
+      
+
+   }    
+}

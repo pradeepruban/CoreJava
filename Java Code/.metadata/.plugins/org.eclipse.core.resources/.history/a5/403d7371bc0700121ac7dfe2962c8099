@@ -1,0 +1,21 @@
+
+
+public class thiskeyword(String  name, int id)
+{
+	this.name=name;
+	this.id = id;
+}
+
+public class thiskeyword {
+
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

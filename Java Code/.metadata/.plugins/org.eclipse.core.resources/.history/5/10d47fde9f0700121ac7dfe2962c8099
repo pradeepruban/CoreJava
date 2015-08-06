@@ -1,0 +1,18 @@
+
+import java.lang.*;
+public class StringBuilder {
+
+    public static void main(String[] args) {
+
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Java Stringbuilder");
+
+        System.out.println("StringBuilder1 :"+sb);
+
+        sb.append(" Example");
+
+        System.out.println("StringBuilder2 :"+sb);
+    }
+}
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ShowViewDialog">
+		<item key="DIALOG_X_ORIGIN" value="504"/>
+		<item key="DIALOG_FONT_NAME" value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma"/>
+		<item key="DIALOG_HEIGHT" value="421"/>
+		<item key="DIALOG_Y_ORIGIN" value="221"/>
+		<item key="DIALOG_WIDTH" value="280"/>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="331"/>
+		<item key="DIALOG_Y_ORIGIN" value="139"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Spring\download4j.zip"/>
+			<item value="D:\Spring\servlet-api-2.5.jar"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,21 @@
+
+import java.util.Vector;
+
+public class Vectors {
+   public static void main(String[] args) {
+  
+	   Vector<Integer> vec = new Vector<Integer>(4);
+  
+      vec.add(4);
+      vec.add(3);
+      vec.add(2);
+      vec.add(1);
+      System.out.println("Added numbers in vec vector are :- "); 
+//      for (Integer number : vec) {
+      for(int i=0;i<=4;i++){
+         System.out.println("Number = " + i);
+      }
+      
+
+   }    
+}

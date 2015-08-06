@@ -1,0 +1,20 @@
+import java.util.*;
+import java.text.*;
+import java.io.*;
+
+public class TimeZones{
+  public static void main(String args[]){
+  Date date = new Date();
+  DateFormat istFormat = new SimpleDateFormat();
+  DateFormat gmtFormat = new SimpleDateFormat();
+  TimeZone gmtTime = TimeZone.getTimeZone("GMT");
+  TimeZone istTime = TimeZone.getTimeZone("IST");
+  TimeZone mstTime = TimeZone.getTimeZone("MST");
+  
+  istFormat.setTimeZone(gmtTime);
+  gmtFormat.setTimeZone(istTime);
+  System.out.println("GMT Time: " + istFormat.format(date));
+  System.out.println("IST Time: " + gmtFormat.format(date));
+  System.out.println("MST Time: " + gmtFormat.format(date));
+  }
+} 

@@ -1,0 +1,60 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.io.*;
+
+public class DBTotal {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws Exception {
+		Connection connection = null; 
+		try 
+			{ 
+			int deletequery,updatequery,insertquery;
+			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+			String url="jdbc:odbc:test";
+			ResultSet rs=null;
+			connection =DriverManager.getConnection(url);
+			Statement statement = connection.createStatement();
+			int opt[] = {1,2,3,4};
+			
+			System.out.println("Please Input A Number");
+	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        String data = br.readLine();
+	        int datas =Integer.parseInt(data);
+	        System.out.println("Enter Option : "+datas);
+
+			if(opt[datas]==1)
+			{
+				String query = "delete from employee where Empname='Hrithikesh' and ID=8";
+				deletequery = statement.executeUpdate(query);
+				System.out.println("Data deleted from the database");
+				connection.close();
+			}
+			if(opt[2]==2)
+			{
+				String query = "update employee set Empname='Hrithikesh' where Empname='Ruban' and ID=8";
+				updatequery = statement.executeUpdate(query);
+				connection.close();
+			}
+			if(opt[3]==3)
+			{
+				String query = "insert into employee values(9,'5','50001','Sethu')";
+				insertquery = statement.executeUpdate(query);
+				connection.close();
+			}
+			
+		
+			
+			}
+		catch (SQLException e) 
+    		{ 
+            System.out.println("Error in connecting to the database");
+    		} 
+	}
+
+}

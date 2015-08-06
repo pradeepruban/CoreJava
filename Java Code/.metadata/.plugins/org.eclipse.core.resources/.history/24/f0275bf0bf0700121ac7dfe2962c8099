@@ -1,0 +1,45 @@
+
+import java.util.Properties;
+import java.io.File;
+import java.io.IOException;
+import java.io.FileInputStream;
+import java.net.URL;
+
+public class JavaProperites {
+    private JavaProperites() {
+    }
+
+    /**
+     * Get the property from the class-path .
+     * @param propsName
+     *    The property name to which we get the value from .
+     * @return Properties
+     *     The properties loaded .
+     * @throws Exception
+     *    Any exception thrown , you will need to catch it .
+     */
+    public static Properties load(String propsName) throws Exception {
+        Properties props = new Properties();
+        URL url = ClassLoader.getSystemResource(propsName);
+        props.load(url.openStream());
+        return props;
+    }
+
+    /**
+     * Load all the  Properties File
+     * @param propsFile
+     *    PropsFile which
+     * @return Properties
+     *    return the properties loaded from the file .
+     * @throws IOException
+     *  Any IOException thrown , you will need to catch it.
+     */
+    public static Properties load(File propsFile) throws IOException {
+        Properties props = new Properties();
+        FileInputStream fis = new FileInputStream(propsFile);
+        props.load(fis);
+        fis.close();
+        return props;
+    }
+}
+

@@ -1,0 +1,35 @@
+
+
+
+
+public class thiskeyword {
+
+		private int a=10;
+		private String name="Ruban";
+	public void thiskeyword()
+	{
+		System.out.println("Employee details");
+	}
+	
+	public thiskeyword(int a , String name)
+	{
+		this.a=a;
+		this.name = name;
+		System.out.println("Employee Id : - "+a);
+		System.out.println("Employee Name : -"+name);
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		thiskeyword t = new thiskeyword(5,"pradeep");
+		 t.toString();
+		t.thiskeyword();
+	   
+		
+
+	}
+
+}

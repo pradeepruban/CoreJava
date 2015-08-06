@@ -1,0 +1,36 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class DBInsert {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws Exception {
+		Connection connection = null; 
+		try 
+			{ 
+			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+			String url="jdbc:odbc:test";
+			ResultSet rs=null;
+			connection =DriverManager.getConnection(url);
+			connection.setAutoCommit(false); 
+			Statement statement = connection.createStatement(); 
+			String query = "insert into Employee (ID,seqno,Empno,Empname) values(7,5,50001,Sethu)";
+			statement.executeUpdate(query);
+			System.out.println("Data Inserted into the database");
+ 			connection.close();
+			}
+		catch (SQLException e) 
+		{ 
+System.out.println("Error in connecting to the database");
+			
+		} 
+
+	}
+
+}
